@@ -198,7 +198,7 @@ h1, h2, h3, h4 {
  /* CSS Mobile */
 
 
-@media only screen and (max-device-width : 568px) {
+/*@media only screen and (max-device-width : 568px) {
 	.header {
 		height: 57px;
 	}	
@@ -247,4 +247,4 @@ h1, h2, h3, h4 {
 	.section1-wrapper_button:nth-of-type(2) {
 		margin: 26px 0 0;
 	}
-}
+}*/
