@@ -17,6 +17,7 @@ p {
 	font-style: normal;
 	font-weight: normal;
 	color: #FFFFFF;
+	margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -25,6 +26,7 @@ h1, h2, h3, h4 {
 	font-weight: normal;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	margin: 0;
 }
 
 .header {
@@ -122,11 +124,12 @@ h1, h2, h3, h4 {
 .section-container {
 	margin: 0 auto;
 	max-width: 1256px;
+	position: relative;
 }
 
 
 .section1-wrapper {
-	position: relative;
+	/*position: relative;*/
 	z-index: 1;
 	top: 194px;
 	
@@ -189,16 +192,87 @@ h1, h2, h3, h4 {
 
 .section2-wrapper {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: space-between;
 }
 
+.section2-wrapper-block1_title {
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+	color: #E3B873;
+	margin: 81px 0 34px;
+}
+
+.section2-wrapper-block1_p {
+	font-size: 14px;
+	line-height: 27px;
+}
+
+.section2-wrapper-block1-subblock {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 33.6vw;
+	margin-top: 42px;
+}
+
+.section2-wrapper-block1-subblock-box {
+	width: 13.7vw;
+	height: 102px;
+}
+
+.section2-wrapper-block1_subblock-box_subtitle {
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #E3B873;
+	margin-bottom: 9px;
+}
+
+.section2-wrapper-block1-subblock-box_p {
+	font-size: 13px;
+	line-height: 21px;
+}
+
+.section2-wrapper-block2_img {
+	max-width: 100%;
+	height: auto;
+}
+
+.section2-wrapper-block2-list {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 45px;
+}
+.section2-wrapper-block2-list-elem {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.section2-wrapper-block2-list-elem_link {
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+}
+
+.section2-wrapper-block2-list-elem_hr {
+	width: 100%;
+	border: none;
+	height: 1px;
+	background: #E3B873;
+}
 
 
  /* CSS Mobile */
 
 
-/*@media only screen and (max-device-width : 568px) {
+@media only screen and (max-device-width : 568px) {
 	.header {
 		height: 57px;
 	}	
@@ -247,4 +321,4 @@ h1, h2, h3, h4 {
 	.section1-wrapper_button:nth-of-type(2) {
 		margin: 26px 0 0;
 	}
-}*/
+}
