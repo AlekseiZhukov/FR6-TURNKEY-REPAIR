@@ -285,6 +285,31 @@ h1, h2, h3, h4 {
 	display: none;
 }
 
+.section3-container--margin {
+	display: flex;
+	margin-top: -297px;
+}
+
+.section3_title {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+}
+.section3-container-wrapper_svg {
+	display: flex;
+    align-items: center;
+	margin-top: 12.79px;
+}
+
+.section3-container-wrapper_svg::before,
+.section3-container-wrapper_svg::after {
+	content: "";
+    width: 32px;
+  	height: 1.54px;
+	background: #E3B873;
+	border-radius: 30px;
+}
+
 
 
  /* CSS Mobile */
