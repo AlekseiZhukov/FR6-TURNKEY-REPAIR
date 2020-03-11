@@ -233,6 +233,10 @@ h1, h2, h3, h4 {
 	font-size: 13px;
 	line-height: 21px;
 }
+/*.section2-wrapper-block1_svg {
+	width: 16vw;
+	height: 13px;
+}*/
 
 .section2-wrapper-block2_img {
 	max-width: 100%;
@@ -259,6 +263,11 @@ h1, h2, h3, h4 {
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.3);
 	text-decoration: none;
+	text-align: center;
+}
+
+.section2-wrapper-block2-list-elem_link--color {
+	color:  #E3B873;
 }
 
 .section2-wrapper-block2-list-elem_hr {
@@ -267,6 +276,15 @@ h1, h2, h3, h4 {
 	height: 1px;
 	background: #E3B873;
 }
+
+.section2-wrapper-block1-subblock-mobile,
+.section2-wrapper-block1_title-mobile,
+.section2-wrapper-block1_p-mobile,
+.section2-wrapper-block2_left-arrow--mobile,
+ .section2-wrapper-block2_rifht-arrow--mobile {
+	display: none;
+}
+
 
 
  /* CSS Mobile */
@@ -320,5 +338,78 @@ h1, h2, h3, h4 {
 
 	.section1-wrapper_button:nth-of-type(2) {
 		margin: 26px 0 0;
+	}
+
+	.section2-wrapper-block1,
+	.section2-wrapper-block2-list {
+		display: none;
+	}
+
+	.section2-wrapper-block2 {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		position: relative;
+		margin: 0 auto;
+		max-width: 340px;
+	}
+	.section2-wrapper-block1_title-mobile {
+		display: block;
+		text-align: center;
+		color: #E3B873;
+		margin-bottom: 22px;
+		letter-spacing: -0.07em;
+		font-size: 22px;
+		line-height: 138.6%;
+	}
+
+	.section2-container--margin {
+		top: 36px;
+	}
+	.section2-wrapper-block2_img {
+		width: 340px;
+		height: auto;
+	}
+	.section2-wrapper-block1_p-mobile {
+		display: block;
+		font-size: 11px;
+		line-height: 158.48%;
+		text-align: center;
+		margin-bottom: 36px;
+	}
+	.section2-wrapper-block2_left-arrow--mobile,
+	.section2-wrapper-block2_rifht-arrow--mobile {
+		display: block;
+		position: absolute;
+		top: 270px;
+		left: 14px;
+	}
+
+ 	.section2-wrapper-block2_rifht-arrow--mobile {
+		left: 291px;
+ 	}
+
+ 	.section2-wrapper-block1-subblock-mobile {
+ 		display: flex;
+ 		flex-flow: row wrap;
+ 		margin-top: 36.65px;
+ 	}
+ 	.section2-wrapper-block1-subblock-box-mobile {
+ 		width: 50%;
+		height: 72.5px;
+		margin-bottom: 27px
+ 	}
+
+	.section2-wrapper-block1_subblock-box_subtitle-mobile {
+ 	font-size: 14px;
+	line-height: 138.6%;
+	text-transform: uppercase;
+	color: #E3B873;
+	margin-bottom: 11px;
+	}
+
+	.section2-wrapper-block1-subblock-box_p-mobile {
+		font-size: 11px;
+		line-height: 18px;
 	}
 }
