@@ -292,7 +292,8 @@ h1, h2, h3, h4 {
 	align-items: center;
 }
 
-.section3_title {
+.section3_title,
+ .section4_title {
 	font-size: 20px;
 	line-height: 28px;
 	text-align: center;
@@ -327,6 +328,16 @@ h1, h2, h3, h4 {
 	box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
 	max-width: 817px;
 	height: auto;
+	position: relative;
+}
+
+.video_line {
+	position: absolute;
+	border: none;
+	width: 100%;
+	height: 0.4em;
+	background: #484848;
+	bottom: -8px;
 }
 
 .section3_line {
@@ -344,6 +355,7 @@ h1, h2, h3, h4 {
 	color: #363636;
 	max-width: 681px;
 }
+
 .section3-container-form {
 	display: flex;
 	flex-flow: row wrap;
@@ -376,10 +388,10 @@ h1, h2, h3, h4 {
 
 }
 
-
 .section3-container-form_input:nth-child(1) {
 	margin-right: 58px;
 }
+
 .section3-container-form_input::placeholder {
 	font-size: 14px;
 	line-height: 23px;
@@ -393,11 +405,74 @@ h1, h2, h3, h4 {
 	/*margin-left: 49px;*/
 }
 
-.section3-container-form_input-checkbox {
-	margin-top: 32.7px;
+.section3-container-checkbox {
+	margin-top: 33.24px;
+	position: relative;
+}
+
+.section3-container-checkbox_text {
+	font-size: 14px;
+	line-height: 163.68%;
+	color: #181818;
+}
+/* Custom checkbox */
+
+input[type="checkbox"] {
+	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+  	left: -28px;
+	top: 1px;
+}
+
+input[type="checkbox"] + label {
+	display: inline-flex;
+  	align-items: center;
+  	user-select: none;
+}
+
+input[type="checkbox"] + label:before {
+	content: "";
+    position: absolute;
+    left: -27.62px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    background-color: #ffffff;
+    border-radius: 1px;
+    background-repeat: no-repeat;
+  	background-position: center center;
+  	/*background-size: 70% 70%;*/
+}
+
+input[type="checkbox"]:checked + label:before {
+	background-color: #E3B873;
+	background-image: url(../images/check.png);
+ }
+input[type="checkbox"] + label:hover:before
+	{
+	background-color: #E3B873;
+}
+/* End custom checkbox */
+
+
+.section3-container-form_input-button {
+	font-size: 13px;
+	line-height: 27px;
+	font-style: normal;
+}
+
+.section4 {
+	margin-top: 147.85px;
+}
+
+.section4_title {
+	color: #181818;
 }
 
  /* CSS Mobile */
+
 
 
 @media only screen and (max-device-width : 568px) {
