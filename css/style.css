@@ -12,7 +12,7 @@ body {
 	font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
 }
 
-p {
+p, li {
 	font-family: Nunito Sans;
 	font-style: normal;
 	font-weight: normal;
@@ -303,6 +303,7 @@ h1, h2, h3, h4 {
 	display: flex;
     align-items: center;
 	margin-top: 12.79px;
+	justify-content: center;
 }
 
 .section3-container-wrapper_svg::before,
@@ -433,8 +434,7 @@ input[type="checkbox"] + label {
 
 input[type="checkbox"] + label:before {
 	content: "";
-    position: absolute;
-    left: -27.62px;
+    margin-right: 8.62px;
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -443,7 +443,7 @@ input[type="checkbox"] + label:before {
     border-radius: 1px;
     background-repeat: no-repeat;
   	background-position: center center;
-  	/*background-size: 70% 70%;*/
+  	
 }
 
 input[type="checkbox"]:checked + label:before {
@@ -469,6 +469,75 @@ input[type="checkbox"] + label:hover:before
 
 .section4_title {
 	color: #181818;
+}
+
+.section4-container-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 31px;
+	margin-bottom: 152px;
+}
+
+.section4-container-wrapper-box {
+	position: relative;
+	width: 392px;
+	margin-bottom: 50px;
+}
+
+.section4-container-wrapper-box_img {
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	height: auto;
+}
+
+.section4-container-wrapper-box-subbox {
+	width: 84%;
+	height: 286px;
+	margin: -141px auto 0;
+	background: #FFFFFF;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+	padding-top: 7.6%;
+	
+}
+
+.section4-container-wrapper-box-subbox_title {
+	font-size: 18px;
+	line-height: 25px;
+	color: #363636;
+	text-transform: none;
+	margin-left: 10%;
+	margin-bottom: 4%;
+}
+
+.section4-container-wrapper-box-subbox_list {
+	padding: 0;
+	margin: 0 0 0 16%;
+}
+
+.section4-container-wrapper-box-subbox_list_item {
+	font-size: 13px;
+	line-height: 27px;
+	color: #959595;
+}
+
+.section4-container-wrapper-box-subbox2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 228px;
+	height: 54px;
+	background: #E3B873;
+	box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+	position: relative;
+	bottom: -32px;
+}
+
+.section4-container-wrapper-box-subbox2_title {
+	font-size: 18px;
+	line-height: 25px;
 }
 
  /* CSS Mobile */
