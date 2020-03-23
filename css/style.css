@@ -1089,12 +1089,49 @@ margin-bottom: 13.22px;
 	display: none;
 }
 
+/* CSS Midl8*/
+@media only screen and (max-device-width : 1024px) {
+	.header-wrapper {
+		width: 700px;
+	}
+	.section-container{
+		width: 700px;
+	}
+	
+	.section2-wrapper-block1 {
+		width: 50%;
+	}
+	.section2-wrapper-block1_p{
+		padding-right: 10px;
+	}
+	.section2-wrapper-block1-subblock{
+		width: 27.6vw;
+	}
+	.section3-container-form_input {
+		margin-right: 14px;
+	}
+	.section4-container-wrapper{
+		justify-content: center;
+	}
+	.section5-container-leftbox {
+		margin-left: 0;
+		padding-right: 10px;
+
+	}
+
+	.section5-container-rightbox-formWrapper {
+		width: 430px;
+	}
+	.section7-container-box-subBox {
+		height: auto;
+	}
+
+
+ }
 
  /* CSS Mobile */
 
- @media only screen and (max-device-width : 925px) {
-
- }
+ 
 @media only screen and (max-device-width : 700px) {
 	.header {
 		height: 57px;
