@@ -202,6 +202,9 @@ a:active {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 }
+.section2-wrapper-block1 {
+	width: 450px;
+}
 
 .section2-wrapper-block1_title {
 	font-size: 27px;
@@ -618,6 +621,7 @@ input[type="checkbox"] + label:hover:before
 	font-size: 14px;
 	line-height: 19px;
 	color: #363636;
+	width: 317px;
 }
 
 .section5-container-rightbox-formWrapper {
@@ -1116,16 +1120,22 @@ margin-bottom: 13.22px;
 	.section5-container-leftbox {
 		margin-left: 0;
 		padding-right: 10px;
-
+	}
+	.section5-container-leftbox-elem_p {
+		width: 175px;
 	}
 
 	.section5-container-rightbox-formWrapper {
 		width: 430px;
 	}
 	.section7-container-box-subBox {
-		height: 530px;
+		height: 550px;
 		width: 230px;
+		
 	}
+	.section7-container-box-subBox_title {
+		 display: block; 
+		
 
 
  }
