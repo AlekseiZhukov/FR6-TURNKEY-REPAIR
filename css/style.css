@@ -437,6 +437,7 @@ a:active {
 .checkbox_text {
 	font-size: 14px;
 	line-height: 163.68%;
+	cursor: pointer;
 }
 .section3-container-checkbox_text {
 	color: #181818;
@@ -983,7 +984,7 @@ margin-bottom: 13.22px;
 }
 
 .section8-container-form {
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	margin: 46px auto 0;
 	max-width: 516px;
 	
