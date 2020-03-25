@@ -1095,7 +1095,7 @@ margin-bottom: 13.22px;
 }
 
 /* CSS Midl8*/
-@media only screen and (max-device-width : 1024px) {
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
 	.header-wrapper {
 		width: 700px;
 	}
