@@ -10,6 +10,7 @@
 body {
 	margin: 0;
 	font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
 }
 
 p, a {
@@ -1094,8 +1095,8 @@ margin-bottom: 13.22px;
 	display: none;
 }
 
-/* CSS Midl8*/
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
+/* CSS Midl*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
 	.header-wrapper {
 		width: 700px;
 	}
@@ -1135,10 +1136,9 @@ margin-bottom: 13.22px;
 		
 	}
 	.section7-container-box-subBox_title {
-		 display: block; 
-		
-
-
+		 display: block;
+	} 
+	
  }
 
  /* CSS Mobile */
@@ -1384,6 +1384,7 @@ margin-bottom: 13.22px;
 
 	.section6_mobile-box {
 		position: relative;
+		z-index: 1;
 	}
 
 	.section6_mobile-box_right_arrow,
@@ -1409,7 +1410,7 @@ margin-bottom: 13.22px;
 		background-color: #181818;
 		top: -129px;
 		position: relative;
-		z-index: -1;
+		
 	}
 	.section8_background{
 		display: none;
@@ -1497,8 +1498,5 @@ margin-bottom: 13.22px;
 	.footer {
 		display: none;
 	}
-	
-		
-
 
 }
