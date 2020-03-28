@@ -1096,7 +1096,7 @@ margin-bottom: 13.22px;
 }
 
 /* CSS Midl*/
-@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+/*@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
 	.header-wrapper {
 		width: 700px;
 	}
@@ -1139,12 +1139,12 @@ margin-bottom: 13.22px;
 		 display: block;
 	} 
 	
- }
+ }*/
 
  /* CSS Mobile */
 
  
-@media only screen and (max-device-width : 700px) {
+@media only screen and (max-device-width : 1440px) {
 	.header {
 		height: 57px;
 	}	
@@ -1349,7 +1349,7 @@ margin-bottom: 13.22px;
 
 	.section4-container-wrapper {
 		width: 340px;
-		margin: 40px auto 0;
+		margin: 40px auto 200px;
 	}
 
 	.section4-container-wrapper-box {
@@ -1375,6 +1375,7 @@ margin-bottom: 13.22px;
 		position: relative;
 		width: 340px;
 		margin: 0 auto;
+		top: -200px;
 	}
 
 	.section6-title_mobile {
@@ -1408,7 +1409,6 @@ margin-bottom: 13.22px;
 	.section8 {
 		background-image: none;
 		background-color: #181818;
-		top: -129px;
 		position: relative;
 		
 	}
@@ -1421,8 +1421,8 @@ margin-bottom: 13.22px;
 	}
 	.section8-container-formWrapper {
 		width: 340px;
-		top: 0px;
-		padding-top: 173px;
+		top: -188px;
+		
 	}
 
 	.section8-container-form {
@@ -1466,8 +1466,8 @@ margin-bottom: 13.22px;
 	}
 
 	.section8-container-map {
-		top: 0;
-		margin: 46px auto 42px;
+		top: -132px;
+		margin: 0 auto;
 		width: 340px;
 		height: 255px;
 		
@@ -1479,13 +1479,15 @@ margin-bottom: 13.22px;
 		color: #E3B873;
 		font-size: 18px;
 		line-height: 138.6%;
-		position: absolute;
+		position: relative;
+		top: -90px;
+		
 	}
 	.section8-container-box-mobile {
-		display: block;
-		position: absolute;
-		bottom: -180px;
-		left: 143px;
+		display: flex;
+		justify-content: center;
+		top: -66px;
+		position: relative;
 	}
 
 	.section8-bottomBackground--mobile {
