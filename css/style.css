@@ -223,12 +223,12 @@ a:active {
 .section2-wrapper-block1-subblock {
 	display: flex;
 	flex-flow: row wrap;
-	max-width: 33.6vw;
+	width: 100%;
 	margin-top: 42px;
 }
 
 .section2-wrapper-block1-subblock-box {
-	width: 13.7vw;
+	width: 50%;
 	height: 102px;
 }
 
@@ -245,9 +245,55 @@ a:active {
 	line-height: 21px;
 }
 
+.slider {
+	position: relative;
+	width: 689px;
+	height: 482px;
+}
+
+.slider_control {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 205px;
+}
+
+.point_slider {
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+}
+
+.active_point {
+	background-color: rgb(255, 255, 255);
+}
+.section2-wrapper-block2-list-elem_link:hover,
+#slider_left_arrow:hover,
+#slider_right_arrow:hover,
+.point_slider:hover {
+	cursor: pointer;
+}
+
 .section2-wrapper-block2_img {
-	max-width: 100%;
-	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	/*transition: opacity 1s linear;*/
+}
+
+.slideOn {
+	z-index: 2;
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+
+	
 }
 
 .section2-wrapper-block2-list {
@@ -271,11 +317,12 @@ a:active {
 	text-align: center;
 	padding-bottom: 6.68px;
 }
-
+.section2-wrapper-block2-list-elem_link--active,
 .section2-wrapper-block2-list-elem_link:hover,
 .section2-wrapper-block2-list-elem_link:active {
 	border-bottom: 1px solid #E3B873;
-    text-decoration: none;
+	text-decoration: none;
+	color:  #E3B873;
 }
 
 .section2-wrapper-block1-subblock-mobile,
@@ -1201,7 +1248,14 @@ margin-bottom: 13.22px;
 	.section2-wrapper-block2-list {
 		display: none;
 	}
+	.slider {
+		width: 340px;
+		height: 241.35px;
+	}
 
+	/* .slider_mobile {
+		display: block
+	} */
 	.section2-wrapper-block2 {
 		display: flex;
 		flex-flow: column nowrap;
@@ -1240,6 +1294,12 @@ margin-bottom: 13.22px;
 		position: absolute;
 		top: 270px;
 		left: 14px;
+		z-index: 3;
+	}
+
+	.section2-wrapper-block2_left-arrow--mobile:hover,
+	.section2-wrapper-block2_rifht-arrow--mobile:hover {
+		cursor: pointer;
 	}
 
  	.section2-wrapper-block2_rifht-arrow--mobile {
