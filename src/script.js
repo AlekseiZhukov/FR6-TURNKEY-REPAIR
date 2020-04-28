@@ -31,22 +31,17 @@ const area_mobile = document.getElementById("area_mobile");
 const time_mobile = document.getElementById("time_mobile");
 const cost_mobile = document.getElementById("cost_mobile");
 
-const point_slide1 = document.getElementById("point_slide1");
-const point_slide2 = document.getElementById("point_slide2");
-const point_slide3 = document.getElementById("point_slide3");
-const link_slide1 = document.getElementById("link_slide1");
-const link_slide2 = document.getElementById("link_slide2");
-const link_slide3 = document.getElementById("link_slide3");
+const pointsSliders = document.querySelectorAll('.point_slider');
+const linksSliders = document.querySelectorAll('.section2-wrapper-block2-list-elem_link');
+
 const leftArrowMobile = document.getElementById("left_arrow_mobile");
 const rightArrowMobile = document.getElementById("right_arrow_mobile");
 let currentSlide = 0;
 
-//const divSlider = document.querySelector('.slider');
-//console.log(divSlider);
 const leftArrow = document.getElementById("slider_left_arrow");
 const rightArrow = document.getElementById("slider_right_arrow");
 
-function innerText (n) {
+function setInnerText (n) {
     city.innerHTML = repairParam[n].city;
     city_mobile.innerHTML = repairParam[n].city;
     area.innerHTML = repairParam[n].area;
@@ -57,10 +52,10 @@ function innerText (n) {
     cost_mobile.innerHTML = repairParam[n].cost;
 }
 
-function nextSlide () {
+function setNextSlide () {
     changeSlide(currentSlide+1);
 }
-function previousSlide () {
+function setPreviousSlide () {
     changeSlide(currentSlide-1);
 }
 
@@ -69,31 +64,21 @@ function changeSlide (n) {
     pointList[currentSlide].classList.remove("active_point");
     linkList[currentSlide].classList.remove("section2-wrapper-block2-list-elem_link--active");
     currentSlide = (n+imgElList.length)%imgElList.length;
-    innerText(currentSlide);
+    setInnerText(currentSlide);
     imgElList[currentSlide].classList.add("slideOn");
     pointList[currentSlide].classList.add("active_point");
     linkList[currentSlide].classList.add("section2-wrapper-block2-list-elem_link--active")
 };
 
-leftArrow.addEventListener('click', previousSlide);
-rightArrow.addEventListener('click', nextSlide);
-leftArrowMobile.addEventListener('click', previousSlide);
-rightArrowMobile.addEventListener('click', nextSlide);
-point_slide1.addEventListener('click', () => {
-    changeSlide (3);
-});
-point_slide2.addEventListener('click', () => {
-    changeSlide (1);
-});
-point_slide3.addEventListener('click', () => {
-    changeSlide (2);
-});
-link_slide1.addEventListener('click', () => {
-    changeSlide (3);
-});
-link_slide2.addEventListener('click', () => {
-    changeSlide (1);
-});
-link_slide3.addEventListener('click', () => {
-    changeSlide (2);
-});
+leftArrow.addEventListener('click', setPreviousSlide);
+rightArrow.addEventListener('click', setNextSlide);
+leftArrowMobile.addEventListener('click', setPreviousSlide);
+rightArrowMobile.addEventListener('click', setNextSlide);
+
+pointsSliders.forEach((item, index) => item.addEventListener('click', () => {
+    changeSlide (index);
+}));
+
+linksSliders.forEach((item, index) => item.addEventListener('click', () => {
+    changeSlide (index);
+}));
